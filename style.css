@@ -16,7 +16,7 @@ body {
     background-image: url("espresso-drip.jpg");
     background-size:cover;
     background-repeat: no-repeat;
-    width: 33%;
+    width: 40%;
     height:100vh;
 }
 .image-text {
@@ -24,7 +24,7 @@ body {
     background-color: rgba(0,0,0,.5);
     color:white;
     position: absolute;
-    width: 33%;
+    width: 40%;
     top:40%;
     font-size: 2rem;
 }
@@ -40,33 +40,32 @@ body {
     position: absolute;
     bottom:1rem;
     text-align: center;
-    width: 33%;
+    width: 40%;
 }
 .right {
     /* align-self: center; */
     background-color:rgba(211, 211, 211,.1);
-    width: 66%;
+    width: 60%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* padding-left: 2rem;
-    padding-right: 2rem; */
 }
 button, input {
-    font-family: inherit;
     font-size: 100%;
-    width: 150px;
+    width: 200px;
     padding:0;
     margin:0;
     box-sizing: border-box;
 }
-.intro, form {
-    padding-left: 2rem;
+.intro, form, .login {
+    padding-left: max(2rem,7%);
     padding-right: 2rem;
 }
 .intro {
+    font-family:sans-serif;
     font-size: 1.5rem;
+    font-weight:bold;
     margin-bottom: 2rem;
 }
 legend {
@@ -77,29 +76,53 @@ legend {
 form {
     background-color: white;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    width: 100;
+    /* width: 100; */
     padding-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 fieldset {
     border: 0;
-    display: table;
     font-family: sans-serif;
     font-size: .9rem;
 }
-fieldset div {
-    display: table-row;
+.form-left {
+    float:left; 
+    margin-right:40px;
 }
 label{
-    display: table-cell;
+    display:block;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: .8rem;
+
+    /* width: 200px;  */
 }
 input {
-    display: table-cell;
-    margin-right: 10px;
+    display: block;
+    margin-bottom: 1rem;
+    padding:4px;
+    border:none;
+    border: 1px solid #cacacad7;
+    border-radius: 4px;
+}
+input:focus {
+    outline:none;
+    border: 2px solid blue;
+    box-shadow: rgba(84, 153, 221, 0.3) 8px 8px 8px;
+}
+input[type:password]:invalid {
+    outline:none;
+    border: 1px solid red;
 }
 button {
     padding: 10px;
     font: bold 1em sans-serif;
     border-radius: 5px;
-    background: rgba(156, 81, 38, 0.822);
+    background: rgba(241, 215, 95, 0.856);
+    border:none;
     cursor: pointer;
+}
+@media only screen and (max-width:850px) {
+    label {
+        width:200px;
+    }
 }

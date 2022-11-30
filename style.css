@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+@font-face {
+    font-family: "metalsmith";
+    src: url("metalsmith-font/MetalsmithRegular-p7ylO.otf") format("opentype"), url("metalsmith-font/MetalsmithRegular-x3yMq.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    display: flex;
+    border:1px solid red;
+}
+.left {
+    background-image: url("espresso-drip.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 33%;
+    height:100vh;
+
+}
+.image-text {
+    text-align: center;
+    background-color: rgba(0,0,0,.3);
+    color:white;
+    position: ;
+    top:8rem;
+}
+.store-name-svg {
+    filter: invert(99%) sepia(8%) saturate(27%) hue-rotate(261deg) brightness(106%) contrast(100%);
+}
+.right {
+    align-self: center;
+   
+}
+.store-name {
+    font: 1em "metalsmith", "monospace";
+    position: ;
+    
+}
+.credit {
+    position: absolute;
+    bottom:1rem;
+    text-align: center;
+    width: 33%;
+    
+}
